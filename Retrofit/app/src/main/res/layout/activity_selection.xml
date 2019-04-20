@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp"
+    tools:context=".Activity.SelectionActivity">
+
+    <Button
+        android:id="@+id/btnAddEntry1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:onClick="AddEntry1"
+        android:text="Add Text Entry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnShow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="ShowEntry1"
+        android:text="Show Entry"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddEntry1"
+        app:layout_constraintStart_toStartOf="@+id/btnAddEntry1"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddEntry1" />
+
+    <Button
+        android:id="@+id/btnAddEntry2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="AddEntry2"
+        android:text="Add Entry with Image"
+        app:layout_constraintEnd_toEndOf="@+id/btnShow1"
+        app:layout_constraintStart_toStartOf="@+id/btnShow1"
+        app:layout_constraintTop_toBottomOf="@+id/btnShow1" />
+
+    <Button
+        android:id="@+id/btnShow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="ShowEntry2"
+        android:text="Show Entry with Image"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddEntry2"
+        app:layout_constraintStart_toStartOf="@+id/btnAddEntry2"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddEntry2" />
+
+</android.support.constraint.ConstraintLayout>
